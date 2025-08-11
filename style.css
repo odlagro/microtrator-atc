@@ -1,0 +1,34 @@
+body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f7f7f7; color: #333; scroll-behavior: smooth; }
+header { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://tse2.mm.bing.net/th/id/OIP.9Dp3igrb7lUqj2YT_a6XsgHaEo?pid=Api') center/cover no-repeat; color: white; text-align: center; padding: 80px 20px; animation: fadeIn 1.2s ease-in-out; }
+header h1 { font-size: 2.8em; margin: 0; }
+header p { font-size: 1.3em; margin: 15px 0; }
+header a { background: #ff6600; color: white; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; transition: 0.3s; }
+header a:hover { background: #e25500; transform: scale(1.05); }
+
+section { padding: 50px 20px; max-width: 1100px; margin: auto; background: white; margin-bottom: 25px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.05); opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
+section.show { opacity: 1; transform: translateY(0); }
+h2 { color: #ff6600; margin-bottom: 25px; }
+
+.benefits { display: flex; gap: 20px; flex-wrap: wrap; }
+.benefit { flex: 1 1 calc(50% - 20px); background: #f0f0f0; padding: 20px; border-radius: 8px; transition: transform 0.3s; }
+.benefit:hover { transform: translateY(-5px); }
+
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+table, th, td { border: 1px solid #ccc; }
+th, td { padding: 12px; text-align: left; }
+th { background: #ff6600; color: white; }
+
+.gallery { display: flex; gap: 20px; flex-wrap: wrap; }
+.gallery img { width: 100%; border-radius: 8px; transition: transform 0.4s ease; }
+.gallery img:hover { transform: scale(1.05); }
+
+ul li { margin-bottom: 10px; }
+
+footer { background: #333; color: white; padding: 30px; text-align: center; }
+footer a { background: #ff6600; padding: 10px 20px; border-radius: 5px; color: white; text-decoration: none; transition: 0.3s; }
+footer a:hover { background: #e25500; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
